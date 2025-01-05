@@ -11,7 +11,7 @@ async def adm() -> dict:
     return {"message": "Вы вошли как администратор"}
 
 @app.get("/user/{user_id}")
-async def id_adress(user_id:str) -> dict:
+async def id_adress(user_id:int) -> dict:
     return {"message": f"Вы вошли как пользователь № {user_id}"}
 
 @app.get("/user/{user_name}/{age}")
